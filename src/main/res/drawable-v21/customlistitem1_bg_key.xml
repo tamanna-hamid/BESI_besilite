@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@color/customlistitem1_pressed_color"
+        />
+    <item
+        android:drawable="@color/customlistitem1_default_color"
+        />
+</selector>
+
+    <!--android:background="@drawable/listview_border"-->

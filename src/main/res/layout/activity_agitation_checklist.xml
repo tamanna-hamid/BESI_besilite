@@ -1,0 +1,315 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jfgaines.besiapp.AgitationChecklist"
+    android:id="@+id/AgitationLayout"
+    android:clickable="false"
+    android:background="#E1BEE7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Please select what you observed."
+                android:id="@+id/textView11"
+                android:textStyle="bold"
+                android:textSize="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView3"
+                android:layout_gravity="right"
+                android:src="@drawable/pwd"
+                android:layout_marginLeft="510dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout11"
+                    android:layout_below="@+id/textView11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="20dp">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kicking"
+                        android:id="@+id/CheckKicking"
+                        android:checked="false"
+                        android:textSize="36dp"
+                        android:layout_column="0"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hitting (including self)"
+                        android:id="@+id/CheckHitting"
+                        android:checked="false"
+                        android:layout_column="0"
+                        android:textSize="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pacing"
+                        android:id="@+id/CheckPacing"
+                        android:checked="false"
+                        android:layout_column="0"
+                        android:textSize="36dp"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wandering"
+                        android:id="@+id/CheckWandering"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:layout_column="0"
+                        android:textSize="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="236dp"
+                        android:layout_height="wrap_content"
+                        android:text="Disrobing"
+                        android:id="@+id/CheckDisrobing"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:layout_column="0"
+                        android:textSize="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout12"
+                    android:layout_alignTop="@+id/linearLayout13"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scratching"
+                        android:id="@+id/CheckScratching"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/customcheckbox"
+                        android:textSize="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Screaming or yelling"
+                        android:id="@+id/CheckScreaming"
+                        android:checked="false"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Strange noises (crying or weird laughter)"
+                        android:id="@+id/CheckNoises"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/customcheckbox"
+                        android:textSize="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="328dp"
+                        android:layout_height="wrap_content"
+                        android:text="Repetitive sentences or questions"
+                        android:id="@+id/CheckRepetitive"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biting"
+                        android:id="@+id/CheckBiting"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/customcheckbox"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout13"
+                    android:layout_alignTop="@+id/linearLayout11"
+                    android:layout_toRightOf="@+id/linearLayout11"
+                    android:layout_toEndOf="@+id/linearLayout11">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spitting (including meals)"
+                        android:id="@+id/CheckSpitting"
+                        android:checked="false"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="309dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating or drinking non-food substances"
+                        android:id="@+id/CheckSubstances"
+                        android:checked="false"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Handling things incorrectly"
+                        android:id="@+id/CheckHandling"
+                        android:checked="false"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tearing or breaking things"
+                        android:id="@+id/CheckDestroying"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unable to find common places i.e. bathroom, bed room"
+                        android:id="@+id/CheckLocating"
+                        android:checked="false"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:text="Submit"
+                android:id="@+id/button5"
+                android:textSize="36dp"
+                android:background="@drawable/loginbtnanimate"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:onClick="SubmitonClick"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

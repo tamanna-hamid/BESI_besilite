@@ -1,0 +1,349 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.uva.inertia.besilite.DailySurvey$PlaceholderFragment"
+    android:background="#E1BEE7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView6"
+                android:background="@drawable/sad"
+                android:layout_marginLeft="67dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="67dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView7"
+                android:background="@drawable/neutral"
+                android:src="@drawable/neutral"
+                android:layout_marginLeft="309dp"
+                android:layout_marginStart="309dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView6"
+                android:layout_toEndOf="@+id/imageView6" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView8"
+                android:background="@drawable/happy"
+                android:src="@drawable/happy"
+                android:layout_marginRight="120dp"
+                android:layout_marginEnd="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/caregiver_emo_next"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/linearLayout10"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/linearLayout15">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Isolated"
+                    android:id="@+id/checkIsolated"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exhausted"
+                    android:id="@+id/checkExhausted"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Worried"
+                    android:id="@+id/checkWorried"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frustrated"
+                    android:id="@+id/checkFrustrated"
+                    android:layout_alignParentTop="true"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:checked="false"
+                    android:layout_column="0"
+                    android:textSize="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discouraged"
+                    android:id="@+id/checkDiscouraged"
+                    android:button="@drawable/customcheckbox"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout10"
+                android:layout_alignTop="@+id/linearLayout17"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="200dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rested"
+                    android:id="@+id/checkRested"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Busy"
+                    android:id="@+id/checkBusy"
+                    android:checked="false"
+                    android:layout_below="@+id/CheckConcentrating"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hanging in there"
+                    android:id="@+id/checkHangingInThere"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Okay"
+                    android:id="@+id/checkOkay"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calm"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/checkCalm"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_alignParentLeft="true"
+
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout17"
+                android:layout_marginLeft="150dp"
+                android:layout_weight="0.31">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Satisfied"
+                    android:id="@+id/checkSatisfied"
+                    android:button="@drawable/customcheckbox"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hopeful"
+                    android:id="@+id/checkHopeful"
+                    android:button="@drawable/customcheckbox"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motivated"
+                    android:id="@+id/checkMotivated"
+                    android:button="@drawable/customcheckbox"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confident"
+                    android:id="@+id/checkConfident"
+                    android:button="@drawable/customcheckbox"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In-control"
+                    android:id="@+id/checkInControl"
+                    android:button="@drawable/customcheckbox"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="2">
+
+            <Button
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:text="Back"
+                android:id="@+id/caregiver_emo_back"
+                android:textSize="36dp"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonanimate"
+                android:layout_gravity="left|top"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="120dp"/>
+
+            <Button
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:text="Next"
+                android:id="@+id/caregiver_emo_next"
+                android:textSize="36dp"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonanimate"
+                android:layout_gravity="right|top"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="120dp"/>
+        </GridLayout>
+
+    </LinearLayout>
+<!--
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/linearLayout10"
+                android:layout_alignEnd="@+id/linearLayout10"-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="right"
+        android:src="@drawable/caregivericon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="How are you feeling ?"
+        android:id="@+id/textView13"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false" />
+
+</RelativeLayout>

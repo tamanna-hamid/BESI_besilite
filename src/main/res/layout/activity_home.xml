@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.uva.inertia.besilite.Home">
+
+    <include layout="@layout/content_home" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            android:weightSum="1"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/CustomTextStyle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="830dp">
+
+                <TextClock
+                    android:id="@+id/textClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:format12Hour="EEE MMM dd, yyyy h:mm a"
+                    android:textAppearance="@style/CustomTextStyle"
+                    android:textColor="#000000"
+                    android:textSize="24dp" />
+            </LinearLayout>
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="500dp"-->
+            <!--android:layout_marginRight="40dp"-->
+            <!--android:gravity="right"-->
+            <!--android:textAlignment="gravity">-->
+
+            <!--<TextClock-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:id="@+id/textClock"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#00FF00"-->
+            <!--android:fontFamily="sans-serif"-->
+            <!--android:format12Hour="EEE MMM dd, yyyy h:mm a"-->
+            <!--android:textAlignment="textEnd"-->
+            <!--android:textAppearance="@style/CustomTextStyle"-->
+            <!--android:textColor="#FF0000"-->
+            <!--android:visibility="visible" />-->
+            <!--</RelativeLayout>-->
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

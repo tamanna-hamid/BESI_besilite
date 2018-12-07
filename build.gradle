@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.uva.inertia.besilite"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven {
+        url "http://maven.snplow.com/releases"
+    }
+    google()
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+
+//    compile 'com.android.support:appcompat-v7:23.3.0'
+//    compile 'com.android.support:design:23.3.0'
+//    compile 'com.android.support:support-v4:23.3.0'
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:support-v4:26.1.0'
+
+
+    compile 'com.github.erd:android-volley:1.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    // Tracker Import
+    compile 'com.snowplowanalytics:snowplow-android-tracker:0.6.+@aar'
+    compile 'com.google.firebase:firebase-core:15.0.2'
+    compile 'com.google.firebase:firebase-messaging:15.0.2'
+    compile 'com.google.firebase:firebase-database:15.0.0'
+
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:gridlayout-v7:26.1.0'
+//    implementation 'com.android.support:support-v4:27.0.0'
+//    implementation 'com.android.support:appcompat-v7:27.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

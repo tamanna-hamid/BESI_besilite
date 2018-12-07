@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="pref_key_base_url"
+        android:summary="@string/pref_summary_base_url"
+        android:title="@string/pref_title_base_url"
+        android:defaultValue="@string/pref_default_base_url"
+        />
+    <EditTextPreference
+        android:key="pref_key_api_token"
+        android:summary="@string/pref_summary_api_token"
+        android:title="@string/pref_title_api_token"
+        android:defaultValue="@string/pref_default_api_token"
+        />
+    <EditTextPreference
+        android:key="pref_key_deploy_id"
+        android:summary="@string/pref_summary_deploy_id"
+        android:title="@string/pref_title_deploy_id"
+        android:defaultValue="@string/pref_default_deploy_id"
+        />
+    <Preference android:title="Export Data"
+        android:key="pref_export_data"
+        android:summary="Export offline data to sd card"/>
+
+</PreferenceScreen>

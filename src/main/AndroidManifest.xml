@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.uva.inertia.besilite">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainbesicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".GetEmotions"
+            android:label="@string/title_activity_get_emotions"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GetActivities"
+            android:label="@string/title_activity_get_activities"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings_activity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:parentActivityName=".Home"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uva.inertia.besilite.Home" />
+        </activity>
+        <activity
+            android:name=".AddNewActivity"
+            android:label="@string/title_activity_add_new"
+            android:parentActivityName=".Home"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uva.inertia.besilite.Home" />
+        </activity>
+        <activity
+            android:name=".DailySurvey"
+            android:label="@string/title_activity_daily_survey"
+            android:parentActivityName=".Home"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uva.inertia.besilite.Home" />
+        </activity>
+        <activity
+            android:name=".AgitationReports"
+            android:label="@string/title_activity_agitation_reports"
+            android:parentActivityName=".Home"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uva.inertia.besilite.Home" />
+        </activity>
+        <activity
+            android:name=".AddActivityBundle"
+            android:label="@string/title_activity_add_activity_bundle"
+            android:parentActivityName=".Home"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uva.inertia.besilite.Home" />
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:screenOrientation="landscape" -->
+        <!-- android:theme="@style/Theme.AppCompat.Light" -->
+        <!-- android:name=".Morning_Layout" -->
+        <!-- android:label="@string/app_name" /> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="Morning_Layout.class" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".CountrycodeActivity2" -->
+        <!-- android:theme="@style/Theme_Sphinx_Dialog_Alert" -->
+        <!-- android:noHistory="true" -->
+        <!-- android:label="Frequent Activities (Select an activity)"> -->
+        <!-- </activity> -->
+        <service android:name=".besiliteFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".BesiFireMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".notify_dialog"
+            android:label="@string/title_activity_notify_dialog"
+            android:parentActivityName=".Home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uva.inertia.besilite.Home" />
+        </activity>
+    </application>
+
+</manifest>

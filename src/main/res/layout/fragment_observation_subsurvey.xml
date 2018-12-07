@@ -1,0 +1,392 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/AgitationLayout"
+    android:clickable="false"
+    android:background="#E1BEE7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Please select all that apply."
+                android:id="@+id/textView11"
+                android:textStyle="bold"
+                android:textSize="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout11"
+                    android:layout_below="@+id/textView11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="20dp">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Frustration"
+                        android:id="@+id/checkRestlessness"
+                        android:checked="false"
+                        android:textSize="25dp"
+                        android:layout_column="0"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Ambulation"
+                        android:id="@+id/checkAmbulating"
+                        android:checked="false"
+                        android:layout_column="0"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Touching"
+                        android:id="@+id/checkTouching"
+                        android:checked="false"
+                        android:layout_column="0"
+                        android:textSize="25dp"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Clothing"
+                        android:id="@+id/checkClothing"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:layout_column="0"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="236dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Physical1"
+                        android:id="@+id/checkPhysical1"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:layout_column="0"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout12"
+                    android:layout_alignTop="@+id/linearLayout13"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Physical2"
+                        android:id="@+id/checkPhysical2"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/customcheckbox"
+                        android:textSize="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_OralFixation"
+                        android:id="@+id/checkOralFixation"
+                        android:checked="false"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Repetition"
+                        android:id="@+id/checkRepetition"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/customcheckbox"
+                        android:textSize="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="328dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Vocal1"
+                        android:id="@+id/checkVocal1"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Vocal2"
+                        android:id="@+id/checkVocal2"
+                        android:checked="false"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/customcheckbox"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout13"
+                    android:layout_alignTop="@+id/linearLayout11"
+                    android:layout_toRightOf="@+id/linearLayout11"
+                    android:layout_toEndOf="@+id/linearLayout11">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Lost"
+                        android:id="@+id/checkLost"
+                        android:checked="false"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Withdrawn"
+                        android:id="@+id/checkWithdrawn"
+                        android:checked="false"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="20dp" />
+
+                    <!--<CheckBox-->
+                        <!--android:layout_width="309dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/OBS_Annoying"-->
+                        <!--android:id="@+id/checkAnnoying"-->
+                        <!--android:checked="false"-->
+                        <!--android:layout_column="6"-->
+                        <!--android:textSize="25dp"-->
+                        <!--android:button="@drawable/customcheckbox"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:paddingLeft="10dp" />-->
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Shadowing"
+                        android:id="@+id/checkShadowing"
+                        android:checked="false"
+                        android:button="@drawable/customcheckbox"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Communication"
+                        android:id="@+id/checkCommunication"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OBS_Other"
+                        android:id="@+id/checkOther"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:layout_column="6"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_marginTop="23dp"
+            >
+
+            <Button
+                android:layout_row="0"
+                android:layout_column="0"
+                android:id="@+id/backFromObs"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:layout_gravity="left|top"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="120dp"
+                android:background="@drawable/buttonanimate"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/obsNextToNotifs"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="120dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonanimate"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <!--
+            <Button
+                android:layout_row="0"
+                android:layout_column="1"
+                android:id="@+id/submitOnObs"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:layout_gravity="right|top"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="120dp"
+                android:background="@drawable/loginbtnanimate"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+              -->
+        </GridLayout>
+
+        <!--android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"-->
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="right"
+        android:src="@drawable/pwd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:textSize="24dp"
+    android:textColor="@color/black"
+    android:height="44dp"
+    android:gravity="left"
+    android:background="@drawable/customlistitem1_bg_key">
+
+    <!--
+    android:textAlignment="left"-->
+    <!--android:height="66dp"-->
+    <!--
+        android:padding="9dp"
+        android:textSize="15sp"
+    -->
+</TextView>

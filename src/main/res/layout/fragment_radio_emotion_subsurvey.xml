@@ -1,0 +1,244 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uva.inertia.besilite.EmotionSubsurveyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E1BEE7">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView9"
+            android:layout_gravity="right"
+            android:src="@drawable/pwd"
+            android:layout_marginRight="63dp"
+            android:layout_marginEnd="63dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please select what you observed."
+            android:id="@+id/textView3"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioCol1"
+                android:layout_marginRight="40dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slow speech"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/radioSlowSpeech"
+                    android:checked="false"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/customcheckbox"
+                    android:text="Frightened"
+                    android:id="@+id/radioFrightened"
+                    android:checked="false"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_height="wrap_content"
+                    android:text="Less talkative"
+                    android:id="@+id/radioLessTalk"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lack of interest"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/radioLackOfInterest"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/customcheckbox"
+                    android:text="Slow reaction"
+                    android:id="@+id/radioSlowReact"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:id="@+id/radioCol2"
+                android:layout_marginRight="40dp">
+
+                <RadioButton
+                    android:text="Sad voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/radioSadVoice"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trouble concentrating"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/radioTroubleConcen"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tearfulness"
+                    android:id="@+id/radioTearfulness"
+                    android:button="@drawable/customcheckbox"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appetite loss"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/radioAppetiteLoss"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bothered by usual activies"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/radioBotheredByUsual"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <RadioGroup android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left|top"
+                android:id="@+id/radioCol3">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/customcheckbox"
+                    android:text="Lack of reaction"
+                    android:id="@+id/radioLackOfReact"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Less interested in hobbies"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/radioLessIntrest"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slow movement"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/radioSlowMove"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very worried"
+                    android:id="@+id/radioVeryWorried"
+                    android:button="@drawable/customcheckbox"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sad expression"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/radioSadExpression"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"
+                    android:checked="false" />
+
+            </RadioGroup>
+        </GridLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

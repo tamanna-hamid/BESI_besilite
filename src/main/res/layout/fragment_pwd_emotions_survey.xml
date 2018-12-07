@@ -1,0 +1,372 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jfgaines.besiapp.DepressionChecklist"
+    android:id="@+id/DepressionLayout"
+    android:background="#E1BEE7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Please select all that apply."
+                android:id="@+id/textView10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout8"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="10dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short-tempered"
+                    android:id="@+id/checkShortTempered"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tearfulness"
+                    android:id="@+id/checkTearfulness"
+                    android:checked="false"
+                    android:layout_below="@+id/checkTearfulness"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lack of reaction to pleasant events"
+                    android:id="@+id/checkLackOfReact"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anxiety/Worrying"
+                    android:id="@+id/checkVeryWorried"
+                    android:checked="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frightened"
+                    android:id="@+id/checkFrightened"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5"
+                android:layout_alignTop="@+id/linearLayout8"
+                android:layout_alignLeft="@+id/button6"
+                android:layout_alignStart="@+id/button6"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="10dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Less talkative"
+                    android:id="@+id/checkLessTalk"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appetite Loss"
+                    android:id="@+id/checkAppetiteLoss"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loss of interest in usual activities"
+                    android:id="@+id/checkLessInterest"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sad expression/voice"
+                    android:id="@+id/checkSadExpression"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physical complaints"
+                    android:id="@+id/checkPhysicalComplaints"
+                    android:checked="false"
+                    android:layout_column="28"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anticipation of the worst"
+                    android:id="@+id/checkWorstAnticipate"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout9"
+                android:layout_alignTop="@+id/linearLayout5"
+                android:layout_toRightOf="@+id/button6"
+                android:layout_toEndOf="@+id/button6">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trouble paying attention"
+                    android:id="@+id/checkTroubleConcen"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lack of energy"
+                    android:id="@+id/checkLackEnergy"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low self-esteem"
+                    android:button="@drawable/customcheckbox"
+                    android:id="@+id/checkLowEsteem"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slow speech"
+                    android:id="@+id/checkSlowSpeech"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:checked="false"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_column="0"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slow reaction/movement"
+                    android:id="@+id/checkSlowMove"
+                    android:button="@drawable/customcheckbox"
+                    android:checked="false"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suicidal"
+                    android:id="@+id/checkSuicidal"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:checked="false"
+                    android:button="@drawable/customcheckbox"
+                    android:layout_column="0"
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="2">
+
+            <Button
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:text="Back"
+                android:id="@+id/pwd_mood_back"
+                android:textSize="36dp"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonanimate"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/linearLayout10"
+                android:layout_alignEnd="@+id/linearLayout10"
+                android:layout_gravity="left|top"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="120dp"/>
+
+            <Button
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:text="Next"
+                android:id="@+id/pwd_mood_next"
+                android:textSize="36dp"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonanimate"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/linearLayout10"
+                android:layout_alignEnd="@+id/linearLayout10"
+                android:layout_gravity="right|top"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginBottom="80dp"
+                android:layout_marginRight="120dp"/>
+
+         </GridLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView5"
+        android:layout_gravity="top|right"
+        android:src="@drawable/pwd"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="590dp"
+         />
+<!--android:layout_marginBottom="548dp"-->
+</RelativeLayout>

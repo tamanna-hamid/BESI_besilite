@@ -1,0 +1,265 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uva.inertia.besilite.AgiGenInfoFragment"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background_pink">
+
+    <GridLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal|bottom"
+        >
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="75dp"
+            android:text="Back"
+            android:id="@+id/agi_gen_info_back"
+            android:background="@drawable/buttonanimate"
+            android:textSize="36dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_gravity="left|top"
+            android:layout_alignTop="@+id/agiLevelGrp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="120dp"/>
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="75dp"
+            android:text="Next"
+            android:id="@+id/agi_gen_info_next"
+            android:background="@drawable/buttonanimate"
+            android:textSize="36dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_gravity="right|top"
+            android:layout_alignTop="@+id/agiLevelGrp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="120dp"/>
+    </GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/agi_gen"
+        android:layout_width="match_parent"
+        android:layout_height="515dp"
+        android:layout_gravity="top|center">
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="110dp">
+
+            <TextView
+                android:id="@+id/agi_date_viewer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/agi_date"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/agi_time"
+                android:layout_toRightOf="@+id/agi_time"
+                android:text="date"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/agi_time_viewer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/agi_time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/agi_time"
+                android:layout_toRightOf="@+id/agi_time"
+                android:text="SELECT TIME"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/agi_time"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/agi_date"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/buttonanimate"
+                android:text="Agitation Time"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/agi_date"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/buttonanimate"
+                android:text="Agitation Date"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="75dp">
+
+            <RadioGroup
+                android:id="@+id/agiLevelGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mementoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/textView_agitation"
+            android:layout_alignBottom="@+id/textView_agitation"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watch Button Presses"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="400dp"
+                android:layout_height="136dp"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fadingEdgeLength="3dp"
+                android:footerDividersEnabled="false"
+                android:requiresFadingEdge="vertical"
+                android:scrollbars="none" />
+            <!-- android:background="@drawable/listview_border"
+                android:padding="2dp"-->
+            <!--android:background="?android:attr/activatedBackgroundIndicator"-->
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/button12"
+                android:text="▲"
+                android:layout_alignBaseline="@+id/button11"
+                android:layout_alignBottom="@+id/button11"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/buttonanimate" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/button"
+                android:layout_alignBaseline="@+id/button9"
+                android:layout_alignBottom="@+id/button9"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="▼"
+                android:background="@drawable/buttonanimate" />
+            -->
+
+            <Button
+                android:id="@+id/button_scrollup"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_alignTop="@+id/listView1"
+                android:layout_toEndOf="@+id/listView1"
+                android:layout_toRightOf="@+id/listView1"
+                android:background="@drawable/buttonanimate"
+                android:text="▲"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/button_scrolldown"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_alignBottom="@+id/listView1"
+                android:layout_toEndOf="@+id/listView1"
+                android:layout_toRightOf="@+id/listView1"
+                android:background="@drawable/buttonanimate"
+                android:text="▼"
+                android:textSize="20dp" />
+
+            <!--
+            <Button
+                android:text="Clear"
+                android:id="@+id/button_clear"
+                android:background="@drawable/buttonanimate"
+                android:layout_height="75dp"
+                android:layout_width="140dp"
+                android:layout_alignBaseline="@+id/button_scrolldown"
+                android:layout_alignBottom="@+id/button_scrolldown"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+                -->
+            <!--
+            <Button
+                android:text="Load"
+                android:id="@+id/button_load"
+                android:background="@drawable/buttonanimate"
+                android:layout_height="75dp"
+                android:layout_width="135dp"
+                android:layout_alignBaseline="@+id/button_scrollup"
+                android:layout_alignBottom="@+id/button_scrollup"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="60dp">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_agitation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="92dp"
+            android:text="When did the agitation occur?"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>

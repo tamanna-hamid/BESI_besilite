@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AgitationLayoutInter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="#E1BEE7"
+    tools:context=".InterventionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="610dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="53dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="1097dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_interventions"
+                android:layout_width="750dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="0dp"
+                android:text="Select all interventions you have tried"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92.5dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:paddingLeft="10dp"
+                        android:text='Listen patiently. Even to gibberish. Smile and nod or participate: "Oh really? Was that okay with you?"'
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92.5dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_inter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:paddingLeft="10dp"
+                        android:text="Offer distracting activity during personal hygiene care e.g. hand them a washcloth to clean face"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92.5dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_inter3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:paddingLeft="10dp"
+                        android:text="Turn off the TV/radio before you start talking to minimize background noise and distraction"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92.5dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_inter4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/customcheckbox"
+                        android:checked="false"
+                        android:paddingLeft="10dp"
+                        android:text="When cooking a meal that freezes easily, go ahead and double the recipe. It may come in handy on a busy/stressful day"
+                        android:textSize="25dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_marginTop="0dp"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/backFromInter"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonanimate"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/submitOnInter"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="120dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/loginbtnanimate"
+                android:onClick="none"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+    </LinearLayout>
+</RelativeLayout>
